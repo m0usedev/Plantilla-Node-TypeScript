@@ -1,1 +1,23 @@
-# node ts
+# Pasos para configurar el proyecto
+
+1. Clona este repositorio
+2. Elimina la relación con el repositorio remoto
+  ```cmd
+  git remote remove origin
+  ```
+3. Instala las dependencias
+  ```cmd
+  npm install --save-exact
+  ```
+4. Actualizar dependencias
+   - `npm run ncu`: comprueba si hay alguna dependencia con nuevas versiones.
+   - `npm run ncu -- -u -f "dependencia1 dependencia1 ..."`: comando para actualizar a la ultima version una dependencia especifica.
+   - `npm run ncu -- -u`: para actualizar todas las dependencias.
+5. Scripts disponibles:
+   - `dev`: para ejecutar el modo desarroll con ts-node-dev en ./src/main.ts.
+   - `tsc`: para tener acceso a tsc.
+   - `build`: elimina la anterior compilacion de .dist/ y vuelve a compilar el codgio ts.
+   - `lint:base`: para tener acceso a `eslint`.
+   - `lint:check`: para detectar fallos en el codigo ts en src.
+   - `lint:fix`: para arreglar todos los fallos posibles en los archivos ts de src.
+   - `ncu`: para tener acceso a `ncu`.
