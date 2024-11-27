@@ -1,7 +1,11 @@
 # Pasos para configurar el proyecto
 
 1. Clona este repositorio
-2. Elimina la relación con el repositorio remoto
+
+  ```cmd
+  git clone https://github.com/m0usedev/Plantilla-Node-TypeScript.git .
+  ```
+3. Elimina la relación con el repositorio remoto
   ```cmd
   git remote remove origin
   ```
