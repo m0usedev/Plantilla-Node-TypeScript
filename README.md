@@ -24,6 +24,9 @@ npm install --save-exact
    - `npm run ncu -- -u`: para actualizar todas las dependencias.
 5. Scripts disponibles:
    - `dev`: para ejecutar el modo desarroll con ts-node-dev en ./src/main.ts.
+   - `tsc-alias`: Para hacer uso de `tsc-alias`. Que sirve para reemplazar las rutas de alias con rutas relativas después de la compilación.
+   - `build`: "tsc && tsc-alias"
+   - `re-build`: que sirve para recompilar ts cuando ya lo hiciste anteriormente, eliminando la carpeta dir previamente.
    - `tsc`: para tener acceso a tsc.
    - `build`: elimina la anterior compilacion de .dist/ y vuelve a compilar el codgio ts.
    - `lint:base`: para tener acceso a `eslint`.
