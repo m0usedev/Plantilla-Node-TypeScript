@@ -2,17 +2,22 @@
 
 1. Clona este repositorio
 
-  ```cmd
-  git clone https://github.com/m0usedev/Plantilla-Node-TypeScript.git .
-  ```
+```cmd
+git clone https://github.com/m0usedev/Plantilla-Node-TypeScript.git .
+```
+
 3. Elimina la relación con el repositorio remoto
-  ```cmd
-  git remote remove origin
-  ```
+
+```cmd
+git remote remove origin
+```
+
 3. Instala las dependencias
-  ```cmd
-  npm install --save-exact
-  ```
+
+```cmd
+npm install --save-exact
+```
+
 4. Actualizar dependencias
    - `npm run ncu`: comprueba si hay alguna dependencia con nuevas versiones.
    - `npm run ncu -- -u -f "dependencia1 dependencia1 ..."`: comando para actualizar a la ultima version una dependencia especifica.
